@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Y.T.E.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbox">
+                <ul class="navlist">
+                    <li>
+                        <p>B.Y.T.E.</p>
+                    </li>
+                    <li>
+                        <div class="list">
+                            <a href="index.html">Logout</a>
+                            <a href="login.html">Login</a>
+                            <a href="register.html">Register</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="main">
+            <div class="dash-card">
+
+                <h1>Welcome to the Dashboard</h1>
+                <div class="user-details">
+                    <h2>User Details</h2>
+                    <div class="details">
+                        <p id="userName"></p>
+                        <p id="userEmail"></p>
+                    </div>
+                </div>
+
+                <div class="poems">
+                    <h2 id="poem-head">Poems</h2>
+                    <div id="poemCards"></div>
+                    <h2>Create a new Poem</h2>
+                    <form id="poemForm">
+                        <textarea id="poemContent" placeholder="Enter your poem" required></textarea><br>
+                        <input type="text" id="poemAuthor" placeholder="Author" required><br>
+                        <button type="submit">Submit Poem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
