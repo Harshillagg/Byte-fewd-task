@@ -168,6 +168,9 @@ h1 {
     border-radius: 5px;
     padding: 5px;
     width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .poem-card p{

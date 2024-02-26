@@ -51,8 +51,8 @@ async function fetchUserDetails(accessToken) {
         }
 
         const userData = await response.json();
-        document.getElementById('userName').textContent = userData.name;
-        document.getElementById('userEmail').textContent = userData.email;
+        document.getElementById('userName').textContent = "Name : " + userData.name;
+        document.getElementById('userEmail').textContent = "Email : " + userData.email;
     } catch (error) {
         console.error('Error fetching user details:', error);
     }
